@@ -8,7 +8,7 @@ COPY . .
 EXPOSE 3000
 
 # the command that starts our app
-CMD ["npm", 'run', "start"]
+CMD ["node", "app.js"]
 
 FROM nginx as production-stage
 RUN mkdir /app
